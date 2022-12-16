@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>ServletControlador</display-name>
+    <servlet-name>ServletControlador</servlet-name>
+    <servlet-class>controller.ServletControlador</servlet-class>
+  </servlet>
+    <error-page>
+    <error-code>404</error-code>
+    <location>/ERRO/404.html</location>
+  </error-page>
+  <error-page>
+    <error-code>405</error-code>
+    <location>/ERRO/405.html</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/ERRO/500.html</location>
+  </error-page>
+  <servlet-mapping>
+    <servlet-name>ServletControlador</servlet-name>
+    <url-pattern>/ServletControlador</url-pattern>
+  </servlet-mapping>
+  <display-name>LojaVirtual</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
